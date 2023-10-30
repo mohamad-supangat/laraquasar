@@ -10,6 +10,7 @@ import { Quasar } from "quasar";
 import quasarIconSet from "quasar/icon-set/svg-mdi-v6";
 import { createApp, h } from "vue";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
+import Plugins from "./Scripts/Plugins.js";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
@@ -28,6 +29,7 @@ createInertiaApp({
                 iconSet: quasarIconSet,
                 config: {}, // quasar config see: https://quasar.dev/start/vite-plugin/
             })
+            .use(Plugins)
             .use(ZiggyVue, Ziggy)
             .mount(el);
     },
