@@ -6,7 +6,7 @@
         "build": "vite build"
     },
     "devDependencies": {
-        "@inertiajs/vue3": "^1.0.13",
+        "@inertiajs/vue3": "^1.0.14",
         "@quasar/extras": "^1.16.7",
         "@quasar/vite-plugin": "^1.6.0",
         "@vitejs/plugin-vue": "^4.4.0",
