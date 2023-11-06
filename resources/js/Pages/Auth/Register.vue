@@ -49,7 +49,7 @@ GuestLayout
         q-form(@submit="submit")
             q-card(style="width: 400px")
                 q-card-section
-                    .text-h5 Register Page
+                    .text-h5 Registration
                     div(v-for='input in inputs')
                         q-input(v-model="form[input.key]" :label="input.label" :rules='[$rules.required()]' :key="input.key")
                         InputError(:message="form.errors[input.key]")
